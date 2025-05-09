@@ -1,0 +1,59 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styles */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+nav h2{
+    color: black;
+    text-wrap: nowrap;
+    
+}
+nav {
+    display: flex;
+    background-color: #4CAF50;
+    align-items: center;
+    width: 100%;
+}
+/* Main Navigation */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    background: #4CAF50;
+    border-radius: 8px;
+    padding: 0 5px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.nav-menu > li {
+    position: relative;
+}
+
+.nav-menu > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu > li > a strong {
+    display: block;
+    font-size: 16px;
+}
+
+.nav-menu > li:hover > a,
+.nav-menu > li.active > a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+

@@ -1,0 +1,126 @@
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+    }
+
+    /* Navigation */
+    .navbar {
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #007bff !important;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: #555 !important;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #007bff !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        background-image: linear-gradient(to right, #09f357, #8bd4b2);
+        color: #fff;
+        padding: 100px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-section .btn-primary {
+        background-color: #fcc513;
+        border-color: #52b788;
+        font-weight: 500;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .hero-section .btn-primary:hover {
+        background-color: #3c9d69;
+        border-color: #3c9d69;
+    }
+
+    /* Featured Products */
+    .featured-products {
+        padding: 60px 0;
+    }
+
+    .featured-products h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product-card .card-body {
+        padding: 1.5rem;
+    }
+
+    .product-card .card-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    .product-card .card-text {
+        color: #555;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #f8f9fa;
+        padding: 30px 0;
+        font-size: 0.875rem;
+        color: #777;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 767.98px) {
+        .hero-section {
+            padding: 60px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+        }
+
+        .featured-products h2 {
+            font-size: 2rem;
+        }
+    }

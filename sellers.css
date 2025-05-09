@@ -1,0 +1,101 @@
+/* sellers.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seller {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 calc(30% - 20px); /* Adjust for 3 items per row */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.seller:hover {
+    transform: translateY(-5px);
+}
+
+.seller img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.seller h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.seller p {
+    color: #555;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius : 8px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0069d9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .seller {
+        flex: 1 1 calc(50% - 20px); /* Adjust for 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .seller {
+        flex: 1 1 calc(100% - 20px); /* Adjust for 1 item per row */
+    }
+}

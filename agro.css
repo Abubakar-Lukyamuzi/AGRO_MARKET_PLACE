@@ -1,0 +1,23 @@
+nav ul{
+    float: right;
+    display: flex;
+    gap: 10px;
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+}
+li:nth-of-type(1),li:nth-of-type(2){
+    border-right: 1px solid black;
+}
+.categories{
+display: flex;
+
+}
+.more_cats{
+    display: flex;
+    
+    }
+    .buttons{
+        display: flex;
+    }

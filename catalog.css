@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text color */
+}
+
+/* Header styles */
+h2 {
+    text-align: center;
+    color: #4CAF50; /* Green color */
+    margin: 20px 0;
+}
+
+/* Search section styling */
+.search-section {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#searchField {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Category section */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333; /* Dark text for links */
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.categories a:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.categories img {
+    width: 150px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Green footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #searchField {
+        width: 90%; /* Adjust search field width for smaller screens */
+    }
+
+    .categories {
+        flex-direction: column; /* Stack categories vertically */
+    }
+
+    .categories a {
+        margin: 5px; /* Reduce margin for smaller screens */
+    }
+}

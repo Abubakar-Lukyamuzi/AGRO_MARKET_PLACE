@@ -1,0 +1,148 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.container_12 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Background for the main content */
+.bg {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for the articles */
+.grid_6 {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.grid_6:last-child {
+    margin-right: 0;
+}
+
+.inner-block {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Clearfix for floated elements */
+.clear {
+    clear: both;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #3498db;
+}
+
+.error, .empty {
+    color: red;
+    font-size: 0.9em;
+}
+
+.link-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button2 {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button2:hover {
+    background-color: #2980b9;
+}
+
+.success {
+    display: none; /* Initially hide success message */
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color:green;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid_6 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .link-form {
+        flex-direction: column;
+    }
+
+    .link-form a {
+        margin-bottom: 10px;
+    }
+}
