@@ -2,10 +2,12 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f7f6; /* Light background */
+    color: #333;
 }
 
 header {
@@ -34,38 +36,104 @@ nav ul li a {
     text-decoration: none;
 }
 
-.services-section {
-    padding: 20px;
+.services-header { /* Styling for the new header class */
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    color: white;
+    padding: 3rem 1rem; /* Increased padding */
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.service {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+.services-header h1 {
+    font-size: 2.8em; /* Larger font size */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.services-header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Grid for services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    padding: 1rem 2rem; /* Padding around the grid */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+}
+
+.service-card { /* Styling for the new service cards */
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.service-icon { /* Styling for service icons */
+    font-size: 3em;
+    color: #56ab2f;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 1.5rem;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
+    padding: 0.8rem 1.5rem;
+    background-color: #52b788;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #3c9d69;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.service-data-display { /* Styling for the data display divs */
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #e9f5e9;
+    border-left: 4px solid #56ab2f;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 0.95em;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 1.5rem 0; /* Increased padding */
+    margin-top: 3rem; /* More space before footer */
 }
 
 /* Responsive Styles */
@@ -73,5 +141,14 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+    .services-header h1 {
+        font-size: 2.2em;
+    }
+    .services-header p {
+        font-size: 1em;
+    }
+    .service-card h3 {
+        font-size: 1.5em;
     }
 }

@@ -7,9 +7,11 @@ body, h2, h3, p {
 
 /* Basic styling for body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Light background for contrast */
+    font-family: 'Roboto', sans-serif; /* Changed font */
+    background-color: #f4f7f6; /* Light background for contrast */
     color: #333; /* Dark text color */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 /* Header styles */
@@ -19,32 +21,78 @@ h2 {
     margin: 20px 0;
 }
 
+/* New Catalog Header styles */
+.catalog-header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Vibrant gradient */
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.catalog-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.catalog-header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 /* Search section styling */
 .search-section {
-    margin: 20px auto;
+    margin: 2rem auto; /* Increased margin */
     text-align: center;
+    padding: 0 1rem; /* Added padding */
+}
+
+.search-wrapper { /* Wrapper for input and button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Max width for search bar */
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 50px; /* Rounded search bar */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 0.5rem;
 }
 
 #searchField {
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #4CAF50; /* Green border */
-    border-radius: 5px;
+    padding: 0.8rem 1rem;
+    width: calc(100% - 60px); /* Adjust width considering button */
+    border: none; /* Removed border */
+    border-radius: 50px 0 0 50px; /* Rounded left side */
+    font-size: 1em;
+    outline: none; /* Remove outline */
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green button */
+.search-wrapper button {
+    padding: 0.8rem 1.2rem;
+    background-color: #2575fc; /* Button color matching gradient */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 50px 50px 0; /* Rounded right side */
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+.search-wrapper button:hover {
+    background-color: #1a5fc3; /* Darker on hover */
+}
+
+.search-wrapper button i {
+    font-size: 1.2em;
+}
+
+.taste-prompt { /* Styling for the taste prompt */
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 /* Category section */
@@ -74,6 +122,65 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Category grid styling */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    padding: 1rem 2rem; /* Padding around the grid */
+    max-width: 1200px;
+    margin: 0 auto 2rem auto; /* Center the grid and add bottom margin */
+}
+
+.category-item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For icon positioning */
+    overflow: hidden; /* To contain hover effects */
+}
+
+.category-item:hover {
+    transform: translateY(-10px) scale(1.03); /* Lift and slightly scale */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.category-item-icon {
+    font-size: 2.5em;
+    color: #2575fc;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.category-item:hover .category-item-icon {
+    color: #1a5fc3;
+}
+
+.category-item img {
+    width: 100%;
+    max-width: 150px; /* Control image size */
+    height: 120px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.05);
+}
+
+.category-item p {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0;
+}
+
 /* Footer styles */
 footer {
     text-align: center;
@@ -87,6 +194,45 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .catalog-header h1 {
+        font-size: 2.2em;
+    }
+    .catalog-header p {
+        font-size: 1em;
+    }
+    .search-wrapper {
+        flex-direction: column;
+        border-radius: 25px; /* Adjust for stacked layout */
+        padding: 1rem;
+    }
+    #searchField {
+        width: 100%;
+        border-radius: 25px; /* Full radius */
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .search-wrapper button {
+        width: 100%;
+        border-radius: 25px; /* Full radius */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .category-item {
+        padding: 1rem;
+    }
+    .category-item-icon {
+        font-size: 2em;
+    }
+    .category-item img {
+        max-width: 120px;
+        height: 100px;
+    }
+    .category-item p {
+        font-size: 1em;
+    }
     #searchField {
         width: 90%; /* Adjust search field width for smaller screens */
     }
@@ -97,5 +243,11 @@ footer {
 
     .categories a {
         margin: 5px; /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
     }
 }

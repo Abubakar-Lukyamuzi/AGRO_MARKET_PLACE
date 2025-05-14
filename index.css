@@ -1,6 +1,4 @@
-
-
-    body {
+body {
         font-family: 'Roboto', sans-serif;
         color: #333;
     }
@@ -29,98 +27,124 @@
 
     /* Hero Section */
     .hero-section {
-        background-image: linear-gradient(to right, #09f357, #8bd4b2);
+        background-image: linear-gradient(to right, #28a745, #218838); /* Updated gradient */
         color: #fff;
-        padding: 100px 0;
+        padding: 120px 0; /* Increased padding */
+        text-align: center; /* Center align text */
     }
 
     .hero-section h1 {
-        font-size: 3rem;
+        font-size: 3.5rem; /* Increased font size */
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem; /* Increased margin */
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Added text shadow */
     }
 
     .hero-section p {
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
+        font-size: 1.35rem; /* Increased font size */
     }
 
     .hero-section .btn-primary {
-        background-color: #fcc513;
-        border-color: #52b788;
-        font-weight: 500;
-        transition: background-color 0.3s ease, border-color 0.3s ease;
+        background-color: #ffc107; /* Changed button color to yellow */
+        border-color: #ffc107; /* Changed border color */
+        font-weight: 600; /* Increased font weight */
+        padding: 12px 30px; /* Adjusted padding */
+        font-size: 1.1rem; /* Adjusted font size */
+        transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
     }
 
     .hero-section .btn-primary:hover {
-        background-color: #3c9d69;
-        border-color: #3c9d69;
+        background-color: #e0a800; /* Darker yellow on hover */
+        border-color: #d39e00; /* Darker border on hover */
+        transform: translateY(-2px); /* Slight lift on hover */
     }
 
     /* Featured Products */
     .featured-products {
-        padding: 60px 0;
+        padding: 80px 0; /* Increased padding */
+        background-color: #f8f9fa; /* Light background color */
     }
 
     .featured-products h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem; /* Increased font size */
         font-weight: 700;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem; /* Increased margin */
+        text-align: center; /* Center align heading */
+        color: #343a40; /* Darker heading color */
     }
 
     .product-card {
-        border: 1px solid #ddd;
-        border-radius: 5px;
+        border: none; /* Removed border */
+        border-radius: 10px; /* Increased border radius */
         overflow: hidden;
-        transition: box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        background-color: #fff; /* White background for cards */
     }
 
     .product-card:hover {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        transform: translateY(-5px); /* Lift card on hover */
     }
 
     .product-card img {
-        height: 200px;
+        height: 220px; /* Increased image height */
         object-fit: cover;
     }
 
     .product-card .card-body {
-        padding: 1.5rem;
+        padding: 1.8rem; /* Increased padding */
     }
 
     .product-card .card-title {
-        font-size: 1.25rem;
-        font-weight: 500;
-        margin-bottom: 0.5rem;
+        font-size: 1.35rem; /* Increased font size */
+        font-weight: 600; /* Adjusted font weight */
+        margin-bottom: 0.75rem; /* Adjusted margin */
+        color: #007bff; /* Blue title color */
     }
 
     .product-card .card-text {
         color: #555;
+        font-size: 0.95rem; /* Adjusted font size */
+        line-height: 1.6; /* Improved line height */
     }
 
     /* Footer */
     footer {
-        background-color: #f8f9fa;
-        padding: 30px 0;
-        font-size: 0.875rem;
-        color: #777;
+        background-color: #343a40; /* Darker footer background */
+        padding: 40px 0; /* Increased padding */
+        font-size: 0.9rem; /* Adjusted font size */
+        color: #adb5bd; /* Lighter text color for footer */
+        text-align: center; /* Center align footer text */
+    }
+    
+    footer a { /* Style for links in footer if any */
+        color: #ffc107; /* Yellow links for contrast */
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #fff;
+        text-decoration: underline;
     }
 
     /* Responsive Styles */
     @media (max-width: 767.98px) {
         .hero-section {
-            padding: 60px 0;
+            padding: 80px 0; /* Adjusted padding for smaller screens */
         }
 
         .hero-section h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem; /* Adjusted font size */
         }
 
         .hero-section p {
-            font-size: 1.1rem;
+            font-size: 1.2rem; /* Adjusted font size */
         }
 
         .featured-products h2 {
-            font-size: 2rem;
+            font-size: 2.2rem; /* Adjusted font size */
+        }
+        .product-card {
+            margin-bottom: 30px; /* Add space between cards on mobile */
         }
     }

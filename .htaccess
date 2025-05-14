@@ -1,0 +1,34 @@
+# Ensure PHP files are processed correctly
+AddType application/x-httpd-php .php
+
+# Set default index files
+DirectoryIndex index.php index.html home.php
+
+# Enable URL rewriting
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Redirect to PHP files even if the extension is not specified
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.+)$ $1.php [L,QSA]
+</IfModule>
+
+# Set character encoding
+AddDefaultCharset UTF-8
+
+# Force MIME type for JSON
+AddType application/json .json
+
+# PHP settings
+<IfModule mod_php7.c>
+    php_flag display_errors on
+    php_value error_reporting E_ALL
+</IfModule>
+
+<IfModule mod_php8.c>
+    php_flag display_errors on
+    php_value error_reporting E_ALL
+</IfModule> 
