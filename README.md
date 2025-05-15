@@ -1,0 +1,1 @@
+This repository contains an Agricultural platform that enable local farmers connect directly to the available buyers for their produce. It has a weather API to equip farmers with the weather conditions in their area for proper planning and also realtime agricultural prices with data from FAO using the FAO API.
