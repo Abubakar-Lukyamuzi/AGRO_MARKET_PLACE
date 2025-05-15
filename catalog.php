@@ -656,37 +656,37 @@ if (!empty($search_query) || !empty($category)) {
     </div>
 
     <div class="categories-grid">
-        <a href="catalog.php?category=grains" class="category-item">
+        <a href="cat.php" class="category-item">
             <div class="category-item-icon"><i class="fas fa-wheat-awn"></i></div>
             <img src="images/grains.avif" alt="Grains" onerror="this.src='https://img.freepik.com/free-photo/wheat-sack-pile-flour-wooden-table_1150-16555.jpg'">
             <p>Grains</p>
         </a>
 
-        <a href="catalog.php?category=coffee" class="category-item">
+        <a href="cat.php" class="category-item">
             <div class="category-item-icon"><i class="fas fa-mug-hot"></i></div>
             <img src="images/coffee.avif" alt="Coffee" onerror="this.src='https://img.freepik.com/free-photo/coffee-beans-white-container-few-beans-wooden-floor_1150-17784.jpg'">
             <p>Coffee & Tea</p>
         </a>
 
-        <a href="catalog.php?category=fruits" class="category-item">
+        <a href="cat.php" class="category-item">
             <div class="category-item-icon"><i class="fas fa-apple-alt"></i></div>
             <img src="images/fruits.avif" alt="Fruits" onerror="this.src='https://img.freepik.com/free-photo/fruit-salad-spilling-floor-still-life_23-2150397535.jpg'">
             <p>Fruits</p>
         </a>
 
-        <a href="catalog.php?category=vegetables" class="category-item">
+        <a href="cat.php" class="category-item">
             <div class="category-item-icon"><i class="fas fa-carrot"></i></div>
             <img src="images/vegetables.avif" alt="Vegetables" onerror="this.src='https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg'">
             <p>Vegetables</p>
         </a>
         
-        <a href="catalog.php?category=dairy" class="category-item">
+        <a href="cat.php" class="category-item">
             <div class="category-item-icon"><i class="fas fa-cheese"></i></div>
             <img src="images/dairy.jpeg" alt="Dairy" onerror="this.src='https://img.freepik.com/free-photo/milk-bottle-realistic-illustration_1284-34979.jpg'">
             <p>Dairy</p>
         </a>
         
-        <a href="catalog.php?category=legumes" class="category-item">
+        <a href="cat.php" class="category-item">
             <div class="category-item-icon"><i class="fas fa-seedling"></i></div>
             <img src="https://img.freepik.com/free-photo/various-legumes-wooden-table_144627-12044.jpg" alt="Legumes">
             <p>Legumes</p>

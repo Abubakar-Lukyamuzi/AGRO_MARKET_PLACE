@@ -40,28 +40,28 @@
         <div class="team-container"> <!-- Container for team members -->
             <div class="team-member">
                 <figure>
-                    <img src="images/abuba.jpg" alt="Hussein"> <!-- Image of team member -->
+                    <img src="images/tiifah.jpeg" alt="Queen"> <!-- Image of team member -->
                     <figcaption>QUEEN LATIIFAH</figcaption> <!-- Caption for the image -->
                 </figure>
                 <p>Working together, great ideas can emerge from collaboration. Every small effort counts. Embrace the process of growth and improvement.</p> <!-- Description of the team member -->
             </div>
             <div class="team-member">
                 <figure>
-                    <img src="images/kelvin.png" alt="Darius K"> <!-- Image of team member -->
+                    <img src="images/nico.jpeg" alt="Nico"> <!-- Image of team member -->
                     <figcaption>KAMUSIIME NICHOLAS</figcaption> <!-- Caption for the image -->
                 </figure>
                 <p>Embrace support and collaboration. Open doors to new opportunities. By working together, we can achieve remarkable results.</p> <!-- Description of the team member -->
             </div>
             <div class="team-member">
                 <figure>
-                    <img src="images/peter.jpg" alt="Patrick Pool"> <!-- Image of team member -->
+                    <img src="images/godwin.jpeg" alt="tandeka"> <!-- Image of team member -->
                     <figcaption>TANDEKA GODWIN</figcaption> <!-- Caption for the image -->
                 </figure>
                 <p>The boat gate.Ihave a different casino. The mountains will give birth to their companions,the feathered ones and the great push,and the mouse will be born.There is no reason</p> <!-- Description of the team member (note: this text seems nonsensical) -->
             </div>
             <div class="team-member">
                 <figure>
-                    <img src="images/abuba.jpg" alt="Hussein"> <!-- Image of team member -->
+                    <img src="images/lahus.jpeg" alt="Hussein"> <!-- Image of team member -->
                     <figcaption>LUKYAMUZI ABUBAKAR HUSSEIN</figcaption> <!-- Caption for the image -->
                 </figure>
                 <p>There are no limits. Embrace challenges with confidence. Today is an opportunity to grow, learn, and move forward. Approach every task with determination and clarity.</p> <!-- Description of the team member -->

@@ -739,7 +739,7 @@ session_start();
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2023 AgroMarket. All rights reserved.</p>
+            <p>&copy; 2025 AgroMarket. All rights reserved.</p>
         </div>
     </footer>
 

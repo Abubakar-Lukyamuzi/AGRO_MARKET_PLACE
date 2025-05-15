@@ -827,7 +827,7 @@ $username = $_SESSION['username'];
             
             <div class="row g-4">
                 <div class="col-md-4 col-sm-6">
-                    <a href="catalog.php?category=grains" class="category-card">
+                    <a href="catalog.php" class="category-card">
                         <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
                             <div class="category-image">
                                 <img src="images/maize.avif" alt="Grains" class="img-fluid">
@@ -847,7 +847,7 @@ $username = $_SESSION['username'];
                 </div>
                 
                 <div class="col-md-4 col-sm-6">
-                    <a href="catalog.php?category=fruits" class="category-card">
+                    <a href="catalog.php" class="category-card">
                         <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
                             <div class="category-image">
                                 <img src="images/berries.avif" alt="Fruits" class="img-fluid">
@@ -867,7 +867,7 @@ $username = $_SESSION['username'];
                 </div>
                 
                 <div class="col-md-4 col-sm-6">
-                    <a href="catalog.php?category=coffee" class="category-card">
+                    <a href="catalog.php" class="category-card">
                         <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
                             <div class="category-image">
                                 <img src="images/tea paper.avif" alt="Coffee" class="img-fluid">
