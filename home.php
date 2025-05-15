@@ -887,7 +887,7 @@ $username = $_SESSION['username'];
                 </div>
                 
                 <div class="col-md-4 col-sm-6">
-                    <a href="catalog.php?category=vegetables" class="category-card">
+                    <a href="catalog.php" class="category-card">
                         <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden">
                             <div class="category-image">
                                 <img src="images/vegetables.jpg" alt="Vegetables" class="img-fluid" onerror="this.src='https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg'">
